@@ -246,4 +246,37 @@ aside > button {
 aside > button:hover {
   background: #3bc55b;
 }
-/*# sourceMappingURL=styles.css.map */
+
+.nav-link {
+  position: relative;
+  list-style: none;
+  padding: 4px 0;
+}
+
+.nav-link::after,
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.6s ease-in-out;
+}
+
+.nav-link::after {
+  top: 0;
+  right: 0;
+  transform-origin: right;
+
+}
+
+.nav-link::before {
+  left: 0;
+  bottom: 0;
+  transform-origin: left;
+}
+
+.nav-link:hover::after,
+.nav-link:hover::before {
+  width: 100%;
+}
