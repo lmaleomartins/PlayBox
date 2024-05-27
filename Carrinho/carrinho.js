@@ -49,3 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
       document.querySelector('aside footer span:nth-child(2)').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
     }
   });
+
+  $('.order').click(function (e) {
+
+    let button = $(this);
+  
+    if (!button.hasClass('animate')) {
+      button.addClass('animate');
+      setTimeout(() => {
+        button.removeClass('animate');
+      }, 10000);
+    }
+  
+  });
