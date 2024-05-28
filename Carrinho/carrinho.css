@@ -727,3 +727,7 @@ html {
 .finalizar button {
   border: 3px solid #ccc;
 }
+
+.product, .cart-preco, .qty, .resumo, .finalizar, .page-title, .content{
+  font-family: 'Rawline', sans-serif;
+}
