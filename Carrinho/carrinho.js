@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+  // botão de finalizar compra
   $('.order').click(function (e) {
 
     let button = $(this);
