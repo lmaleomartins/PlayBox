@@ -731,3 +731,8 @@ html {
 .product, .cart-preco, .qty, .resumo, .finalizar, .page-title, .content{
   font-family: 'Rawline', sans-serif;
 }
+
+.cart-icon, .user-icon {
+  color: #fff;
+  font-size: 32px;
+}

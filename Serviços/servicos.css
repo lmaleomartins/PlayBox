@@ -51,3 +51,8 @@
     background-color: #343a40;
     transition: background-color 0.3s ease;
 }
+
+.cart-icon, .user-icon {
+    color: #fff;
+    font-size: 32px;
+}

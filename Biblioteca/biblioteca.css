@@ -39,3 +39,8 @@
 .nav-link:hover::before {
     width: 100%;
 }
+
+.cart-icon, .user-icon {
+    color: #fff;
+    font-size: 32px;
+}
