@@ -1,0 +1,213 @@
+@import url('https://fonts.cdnfonts.com/css/rawline');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rawline", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background: url('../assets/background.png') no-repeat center;
+    font-family: "Rawline", sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    font-family: "Rawline", sans-serif;
+}
+
+.wrapper {
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: transform .5s ease, height .2s ease;
+    font-family: "Rawline", sans-serif;
+}
+
+.wrapper.active {
+    height: 520px;
+    font-family: "Rawline", sans-serif;
+}
+
+.wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+    font-family: "Rawline", sans-serif;
+}
+
+.wrapper .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+    font-family: "Rawline", sans-serif;
+}
+
+.wrapper.active .form-box.login {
+    transition: none;
+    transform: translateX(-400px);
+    font-family: "Rawline", sans-serif;
+}
+
+.wrapper .form-box.register {
+    position: absolute;
+    transition: none;
+    transform: translateX(400px);
+    font-family: "Rawline", sans-serif;
+}
+
+.wrapper.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+    font-family: "Rawline", sans-serif;
+}
+
+
+.form-box h2 {
+    font-size: 2em;
+    color: #FFF5EA;
+    text-align: center;
+    font-family: "Rawline", sans-serif;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #FFF5EA;
+    margin: 30px 0;
+    font-family: "Rawline", sans-serif;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #FFF5EA;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+    font-family: "Rawline", sans-serif;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    font-family: "Rawline", sans-serif;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #FFF5EA;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+    font-family: "Rawline", sans-serif;
+}
+
+.input-box .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #FFF5EA;
+    line-height: 57px;
+}
+
+.remember-forgot {
+    font-size: .9em;
+    color: #FFF5EA;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Rawline", sans-serif;
+}
+
+.remember-forgot label input {
+    accent-color: #FFF5EA;
+    margin-right: 3px;
+    font-family: "Rawline", sans-serif;
+}
+
+.remember-forgot a {
+    color: #FFF5EA;
+    text-decoration: none;
+    font-family: "Rawline", sans-serif;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    font-family: "Rawline", sans-serif;
+}
+
+.bth {
+    width: 100%;
+    height: 45px;
+    background: #FFF5EA;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: none;
+    font-weight: 500;
+    transition: .5s;
+    border: 2px solid #FFF5EA;
+    font-family: "Rawline", sans-serif;
+}
+
+.bth:hover {
+    background: none;
+    color: #FFF5EA;
+    font-family: "Rawline", sans-serif;
+}
+
+.login-register {
+    font-size: .9em;
+    color: #FFF5EA;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    font-family: "Rawline", sans-serif;
+}
+
+.login-register p a {
+    color: #FFF5EA;
+    text-decoration: none;
+    font-weight: 600;
+    font-family: "Rawline", sans-serif;
+}
+
+.login-register p a:hover {
+    text-decoration: underline;
+    font-family: "Rawline", sans-serif;
+}
+

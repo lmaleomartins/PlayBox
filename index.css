@@ -43,4 +43,10 @@
 .cart-icon, .user-icon {
     color: #fff;
     font-size: 32px;
+    transition: .5s;
 }
+
+.cart-icon:hover, .user-icon:hover {
+    transform: scale(1.2);
+}
+

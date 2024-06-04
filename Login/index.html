@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/controle-de-video-game.png">
+</head>
+<body>
+<header>
+    <a class="navbar-brand" href="../index.html"
+                style="color: white; font-size: 50px; font-family: 'Rawline', sans-serif; text-decoration: none;">PlayBox</a>
+</header>
+<div class="wrapper">
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Senha</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>Lembrar login</label>
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+            <button type="submit" class="bth">Login</button>
+            <div class="login-register">
+                <p>Não é cadastrado? <a href="#" class="register-link">Cadastrar</a></p>
+            </div>
+        </form>
+    </div>
+
+    <div class="form-box register">
+        <h2>Cadastro</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="person"></ion-icon>
+                </span>
+                <input type="text" required>
+                <label>Usuário</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="mail"></ion-icon>
+                </span>
+                <input type="email" required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon">
+                    <ion-icon name="lock-closed"></ion-icon>
+                </span>
+                <input type="password" required>
+                <label>Senha</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox" required>Li e aceito os termos e condições</label>
+            </div>
+            <button type="submit" class="bth">Cadastrar</button>
+            <div class="login-register">
+                <p>Já é cadastrado? <a href="#" class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
