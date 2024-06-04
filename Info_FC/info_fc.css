@@ -1,3 +1,11 @@
+.zoom {
+    transition: transform 0.2s; 
+}
+
+.zoom:hover {
+    transform: scale(1.1); 
+}
+
 .nav-link {
     position: relative;
     list-style: none;
@@ -32,7 +40,12 @@
     width: 100%;
 }
 
-.cart-icon, .user-icon {
-    color: #fff;
+.cart-icon:hover, .user-icon:hover {
+    transform: scale(1.2);
+}
+
+.user-icon, .cart-icon {
+    color: #FFFFFF;
     font-size: 32px;
+    transition: .5s;
 }
