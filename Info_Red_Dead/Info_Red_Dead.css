@@ -1,3 +1,97 @@
+body {
+    background-image: url(../assets/fundoBlur.png);
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 50px;
+    font-family: 'Rawline', sans-serif;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-nav {
+    font-size: 20px;
+}
+
+.F{
+    margin-top: -4%;
+}
+
+.form-control {
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-family: 'Rawline', sans-serif;
+}
+
+.description-box {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: 10%;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 1%;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Rawline', sans-serif;
+    margin-top: -5%;
+}
+
+.description-box h1 {
+    margin-top: 3%;
+}
+
+.credits {
+    font-size: 12px;
+    margin-top: 10%;
+}
+
+.card-total {
+    width: 22rem;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card-body {
+    font-family: 'Rawline', sans-serif;
+    text-align: center;
+}
+
+.card-title {
+    color: white;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.card-title img {
+    padding: 10px;
+}
+
+.btn-primary {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 0;
+    margin-right: 4%;
+}
+
+.btn-secondary {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 0;
+}
+
+
 .nav-link {
     position: relative;
     list-style: none;
@@ -41,3 +135,96 @@
 .cart-icon:hover, .user-icon:hover {
     transform: scale(1.2);
 }
+
+@media (max-width: 768px) {
+    body{
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        background-size: cover; /* Faz com que a imagem cubra toda a área da tela */
+        background-attachment: fixed; /* Mantém a imagem de fundo fixa ao rolar a página */
+    
+    }
+    
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .F .form-control {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .card-total {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .card-title {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: block;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    
+
+    .description-box {
+        top: 10%;
+        left: 5%;
+        right: 5%;
+        transform: none;
+        margin-top: 730px;
+        font-size: 16px;
+        width: 90%;
+        padding: 5%;
+        display: none;
+    }
+
+    #description-button {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .description-box p{
+        overflow-y:auto;
+    }
+
+    .description-box h1 {
+        font-size: 24px;
+    }
+
+    .description-box .copyright {
+        font-size: 10px;
+        margin-top: 10%;
+    }
+
+    .btn-primary {
+        background-color: #000000;
+        border: 0;
+        margin-right: 4%;
+    }
+    
+    .btn-secondary {
+        background-color: #000000;
+        border: 0;
+    }
+
+    .btn-dark{
+        margin-top: -3%;
+        background: #000000;
+    }
+}
+
