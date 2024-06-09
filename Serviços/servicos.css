@@ -1,8 +1,153 @@
+/* Estilos para o body */
+body {
+    background-image: url(../assets/background.png);
+}
+
+/* Estilos para a navbar */
+.navbar {
+    background-color: transparent;
+    margin-bottom: 2%;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 50px;
+    font-family: 'Rawline', sans-serif;
+}
+
+.navbar-toggler-icon {
+    color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+/* Estilos para o formulário de pesquisa */
+.F .form-control {
+    width: 500px;
+    height: 40px;
+    margin-top: 18px;
+    border-radius: 30px;
+    font-family: 'Rawline', sans-serif;
+}
+
+/* Estilos para os ícones de carrinho e usuário */
+.cart-icon,
+.user-icon {
+    color: white;
+}
+
+/* Estilos para o título "Serviços" */
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 3%;
+    font-family: 'Rawline', sans-serif;
+}
+
+/* Estilos para as cartas de serviços */
+.card-total-servicos {
+    padding: 20px;
+}
+
+/* Estilos para as imagens das cartas de serviços */
+.zoom {
+    position: relative;
+    overflow: hidden;
+}
+
+.zoom img {
+    transition: transform 0.5s ease;
+}
+
+.zoom:hover img {
+    transform: scale(1.05);
+}
+
+/* Estilos para o texto sobre as imagens das cartas de serviços */
+.text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: aliceblue;
+    font-size: 35px;
+    font-family: 'Rawline', sans-serif;
+}
+
+/* Estilos para o botão de adicionar ao carrinho */
+.btn-dark {
+    border-radius: 10px;
+    background-color: rgba(26, 26, 26, 0.75);
+    border: 0;
+    position: absolute;
+    top: 50%;
+    right: -8%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: aliceblue;
+    font-size: 26px;
+    width: 25%;
+    font-family: 'Rawline', sans-serif;
+}
+
+
+/* Estilos para o ícone dentro do botão de adicionar ao carrinho */
+.btn-dark .bi-cart-fill {
+    font-size: 1.5rem;
+}
+
+/* Estilos para o hover do botão de adicionar ao carrinho */
+.btn-dark:hover {
+    background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* Estilos para as imagens das cartas de serviços */
+.zoom img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para o texto sobre as imagens das cartas de serviços */
+.text {
+    color: aliceblue;
+}
+
+/* Estilos para o hover do texto sobre as imagens das cartas de serviços */
+.text:hover {
+    color: white;
+}
+
+/* Estilos para a grade de cartas */
+.row {
+    width: 100%;
+}
+
+/* Estilos para as cartas */
+.card-total-servicos {
+    margin-top: 20px;
+}
+
+/* Estilos para o container das cartas */
+.container {
+    width: 100%;
+}
+
+/* Estilos para as colunas das cartas */
+.col {
+    width: 100%;
+}
+
+/* Estilos para o hover da carta */
 .zoom:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
 
+/* Estilos para o hover do link da navbar */
 .nav-link {
     position: relative;
     list-style: none;
@@ -23,7 +168,6 @@
     top: 0;
     right: 0;
     transform-origin: right;
-
 }
 
 .nav-link::before {
@@ -37,27 +181,80 @@
     width: 100%;
 }
 
+/* Estilos para o título da carta */
 .card-title {
     color: aliceblue;
     font-size: 24px;
 }
 
+/* Estilos para o botão */
 .btn {
     color: aliceblue;
     font-size: 18px;
 }
 
+/* Estilos para o hover do botão */
 .btn:hover {
     background-color: #343a40;
     transition: background-color 0.3s ease;
 }
 
+/* Estilos para os ícones de carrinho e usuário */
 .cart-icon, .user-icon {
     color: #fff;
     font-size: 32px;
     transition: .5s;
 }
 
+/* Estilos para o hover dos ícones de carrinho e usuário */
 .cart-icon:hover, .user-icon:hover {
     transform: scale(1.2);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .F .form-control {
+        width: 100%;
+    }
+
+    .zoom img{
+        width: 900px;
+    }
+    
+    .btn-light {
+        font-size: 8px;
+        width: 90%;
+        margin-right: -90px;
+        margin-top: 1%;
+        height: 45%;
+    }
+    
+    .text {
+        font-size: 24px;
+    }
+    
+    .navbar-brand {
+        font-size: 36px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 18px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+
+    .container-1{
+        width: 100%;
+        padding: 10%;
+    }
+
+    .card-title{
+        margin-top: -2%;
+    }
+
+
+    
+
 }

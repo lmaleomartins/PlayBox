@@ -1,3 +1,67 @@
+/* Estilo para o corpo */
+body {
+    background-image: url(../assets/background.png);
+}
+
+/* Estilo para a navegação */
+.navbar-brand {
+    color: white;
+    font-size: 50px;
+    font-family: 'Rawline', sans-serif;
+}
+
+.container-fluid {
+    margin-bottom: 2%;
+}
+
+.nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.F .form-control {
+    width: 500px;
+    height: 40px;
+    margin-top: -5px;
+    border-radius: 30px;
+    font-family: 'Rawline', sans-serif;
+}
+
+.jogos-principais h1,
+.jogos-principais p,
+.jogos-populares h1,
+.jogos-populares p {
+    color: white;
+    font-family: 'Rawline', sans-serif;
+    text-align: center;
+}
+
+
+
+
+.card-total-jogos-principais {
+    max-width: 100%;
+    max-height: 650px;
+}
+
+.card-total-jogos-principais img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-total-jogos-principais p {
+    color: white;
+    font-size: 25px;
+    font-family: 'Rawline', sans-serif;
+}
+
+
+.zoom a {
+    text-decoration: none;
+}
+
+
+
 .zoom {
     transition: transform 0.2s; 
 }
@@ -48,4 +112,57 @@
 
 .cart-icon:hover, .user-icon:hover {
     transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .F .form-control {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .card-total-jogos-principais {
+        max-height: none;
+        margin-top: 25px;
+        overflow-y: scroll;
+    }
+
+    .card-total-jogos-principais img {
+        width: 80%;
+        max-height: 150px;
+    }
+
+    .card-total-jogos-principais p {
+        font-size: 90%;
+    }
+    
+
+
+    .row-cols-3 .col,
+    .row-cols-4 .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    .jogos-principais h1,
+    .jogos-principais p,
+    .jogos-populares h1,
+    .jogos-populares p {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    
 }

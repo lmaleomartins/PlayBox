@@ -1,3 +1,96 @@
+/* Estilos gerais */
+body {
+    background-image: url(../assets/rainbow-six-background.png);
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 50px;
+    font-family: 'Rawline', sans-serif;
+}
+
+.navbar-toggler-icon {
+    background-color: white;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-size: 20px;
+}
+
+.F{
+    margin-top: -4%;
+}
+
+.F .form-control {
+    width: 500px;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 30px;
+    font-family: 'Rawline', sans-serif;
+}
+
+.card-total {
+    width: 22rem;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+.card-img-top {
+    border-radius: 10px;
+}
+
+.card-title {
+    color: white;
+    text-align: justify;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    background-color: rgba(0, 0, 0, 0.50);
+    border: 0;
+    margin-left: 17px;
+}
+
+/* Estilos específicos */
+.description-container {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: 10%;
+    background-color: rgba(0, 0, 0, 0.50);
+    padding: 1%;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Rawline', sans-serif;
+    margin-top: -5%;
+}
+
+.description-container h1 {
+    margin-top: 5%;
+}
+
+.description-container p {
+    margin-top: 2%;
+}
+
+.description-container .copyright {
+    font-size: 12px;
+    margin-top: 25%;
+}
+
+.cart-icon ion-icon,
+.user-icon ion-icon {
+    color: #fff;
+    font-size: 32px;
+    transition: .5s;
+}
+
 .nav-link {
     position: relative;
     list-style: none;
@@ -18,7 +111,6 @@
     top: 0;
     right: 0;
     transform-origin: right;
-
 }
 
 .nav-link::before {
@@ -32,12 +124,95 @@
     width: 100%;
 }
 
-.cart-icon, .user-icon {
+.cart-icon,
+.user-icon {
     color: #fff;
     font-size: 32px;
     transition: .5s;
 }
 
-.cart-icon:hover, .user-icon:hover {
+.cart-icon:hover,
+.user-icon:hover {
     transform: scale(1.2);
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    body{
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        background-size: cover; /* Faz com que a imagem cubra toda a área da tela */
+        background-attachment: fixed; /* Mantém a imagem de fundo fixa ao rolar a página */
+    
+    }
+    
+    .navbar-brand {
+        font-size: 30px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+
+    .F .form-control {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .card-total {
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 10%;
+    }
+
+    .card-title {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        display: block;
+    }
+
+    .btn {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    
+
+    .description-container {
+        top: 10%;
+        left: 5%;
+        right: 5%;
+        transform: none;
+        margin-top: 730px;
+        font-size: 16px;
+        width: 90%;
+        padding: 5%;
+        display: none;
+    }
+
+    #description-button {
+        display: block;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .description-container p{
+        overflow-y:auto;
+    }
+
+    .description-container h1 {
+        font-size: 24px;
+    }
+
+    .description-container .copyright {
+        font-size: 10px;
+        margin-top: 10%;
+    }
+
+    .btn-dark{
+        margin-top: -3%;
+    }
 }
