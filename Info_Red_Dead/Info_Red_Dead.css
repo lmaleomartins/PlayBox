@@ -136,7 +136,7 @@ body {
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     body{
         background-repeat: no-repeat; /* Evita a repetição da imagem */
         background-size: cover; /* Faz com que a imagem cubra toda a área da tela */

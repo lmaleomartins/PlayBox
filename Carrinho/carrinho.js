@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   });
 
+
   // botão de finalizar compra
   $('.order').click(function (e) {
 
@@ -63,3 +64,71 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const minusButtons = document.querySelectorAll('.btn-minus-1');
+    const plusButtons = document.querySelectorAll('.btn-plus-1');
+    const removeButtons = document.querySelectorAll('.remove');
+  
+    minusButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const qtyElement = button.nextElementSibling;
+        let qty = parseInt(qtyElement.textContent);
+        if (qty > 1) {
+          qty--;
+          qtyElement.textContent = qty;
+          updateTotal(button);
+        }
+      });
+    });
+  
+    plusButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const qtyElement = button.previousElementSibling;
+        let qty = parseInt(qtyElement.textContent);
+        qty++;
+        qtyElement.textContent = qty;
+        updateTotal(button);
+      });
+    });
+  
+    removeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const row = button.closest('li');
+        row.remove();
+        updateTotal(button);
+      });
+    });
+  
+    function updateTotal(button) {
+      const row = button.closest('li');
+      const price = parseFloat(row.querySelector('span:nth-child(2)').textContent.replace('R$', '').replace(',', '.'));
+      const qty = parseInt(row.querySelector('.qty span').textContent);
+      const total = price * qty;
+      row.querySelector('td:nth-child(4)').textContent = `R$ ${total.toFixed(2).replace('.', ',')}`;
+  
+      let subtotal = 0;
+      document.querySelectorAll('ul li').forEach(row => {
+        const rowTotal = parseFloat(row.querySelector('span:nth-child(2)').textContent.replace('R$', '').replace(',', '.'));
+        subtotal += rowTotal;
+    });
+      document.querySelector('aside .info div:nth-child(3) span:nth-child(4)').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+      document.querySelector('aside footer span:nth-child(4)').textContent = `R$ ${subtotal.toFixed(2).replace('.', ',')}`;
+    }
+  });
+
+
+  // botão de finalizar compra
+  $('.order').click(function (e) {
+
+    let button = $(this);
+  
+    if (!button.hasClass('animate')) {
+      button.addClass('animate');
+      setTimeout(() => {
+        button.removeClass('animate');
+      }, 10000);
+    }
+  
+  });
+  
