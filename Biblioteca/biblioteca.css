@@ -104,6 +104,7 @@ body {
     width: 100%;
 }
 
+
 .cart-icon, .user-icon {
     color: #fff;
     font-size: 32px;
@@ -114,7 +115,7 @@ body {
     transform: scale(1.2);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     
     .navbar-brand {
         font-size: 30px;

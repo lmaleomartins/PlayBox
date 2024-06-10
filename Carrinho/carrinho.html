@@ -23,29 +23,26 @@
 </head>
 <body style="background-image: url(../assets/background.png);">
     <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid" style="margin-bottom: 2%;">
-            <a class="navbar-brand" href="../index.html"
-                style="color: white; font-size: 50px; font-family: 'Rawline', sans-serif;">PlayBox</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="container-fluid">
+            <a class="navbar-brand" style="color: aliceblue; font-size: 50px; font-family: 'Rawline', sans-serif;" href="../index.html">PlayBox</a>
+            <button class="navbar-toggler" style="background-color: aliceblue;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5" style="font-size: 20px; font-family: 'Rawline', sans-serif;">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02" >
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-5" >
                     <li class="nav-item">
-                        <a class="nav-link" href="../Biblioteca/biblioteca.html" style="color: white;">Biblioteca</a>
+                        <a class="nav-link" style="color: white; font-size: 20px;" href="../Biblioteca/biblioteca.html">Biblioteca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Serviços/servicos.html" style="color: white;">Serviços</a>
+                        <a class="nav-link" style="color: white; font-size: 20px;" href="../Serviços/servicos.html">Serviços</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../Acessórios/acessorios.html" style="color: white;">Acessórios</a>
+                        <a class="nav-link" style="color: white; font-size: 20px;" href="../Acessórios/acessorios.html">Acessórios</a>
                     </li>
                 </ul>
                 <div class="d-flex align-items-center gap-5 me-4">
                     <form class="F" role="Procurar">
-                        <input class="form-control opacity-75" type="Procurar" placeholder="Procurar" aria-label="Procurar"
-                            style="width: 500px; height: 40px; margin-top: 30px; border-radius: 30px; font-family: 'Rawline', sans-serif;">
+                        <input class="form-control opacity-75" type="Procurar" placeholder="Procurar" aria-label="Procurar">
                     </form>
                     <a class="cart-icon" href="../Carrinho/carrinho.html"><ion-icon name="cart"></ion-icon></a>
                     <a class="user-icon" href="../Login/index.html"><ion-icon name="person-circle"></ion-icon></a>
@@ -56,7 +53,7 @@
     <main>
         <div class="page-title">Seu Carrinho</div>
         <div class="content">
-            <section>
+            <section class="d-none d-md-block">
                 <table>
                     <thead>
                         <tr>
@@ -86,7 +83,7 @@
                                     <button class="btn-plus"><i class="bx bx-plus"></i></button>
                                 </div>
                             </td>
-                            <td style="color: #ffffff;">R$ 300,00</td>
+                            <td class="cart-preco" style="color: #ffffff;">R$ 300,00</td>
                             <td>
                                 <button class="remove"><i class="bx bx-x"></i></button>
                             </td>
@@ -140,7 +137,7 @@
                     </tbody>
                 </table>
             </section>
-            <aside>
+            <aside class="d-none d-md-block">
                 <div class="resumo">
                     <header>Resumo da compra</header>
                     <div class="info">
@@ -179,11 +176,159 @@
             </div>
             </aside>
         </div>
+
+    <ul class="list-group mb-3 d-md-none" style="background-color: transparent;">
+        <li class="list-group-item py-3" style="background-color: rgba(255, 255, 255, 0.1);">
+            <div class="row g-3">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="#">
+                        <img src="../assets/batman_arkham_origins.jpg" class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                    <h4>
+                        <b><a href="#" class="text-decoration-none text-light">
+                            Batman Arkham</a></b>
+                    </h4>
+                    <h5 class="text-light">
+                        Xbox
+                    </h5>
+                </div>
+                <div class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                    <div class="input-group">
+                        <td>
+                            <div class="qty">
+                                <button class="btn-minus-1"><i class="bx bx-minus"></i></button>
+                                <span>1</span>
+                                <button class="btn-plus-1"><i class="bx bx-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="remove"><i class="bx bx-x"></i></button>
+                        </td>
+                    </div>
+                    <div class="text-end mt-2">
+                        <span class="text-light"><td class="cart-preco" style="color: #ffffff;">R$150,00</td></span>
+                        <td class="cart-preco" style="color: #ffffff;">R$ 150,00</td>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item py-3" style="background-color: rgba(255, 255, 255, 0.1);">
+            <div class="row g-3">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="#">
+                        <img src="../assets/fifa.jpg" class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                    <h4>
+                        <b><a href="#" class="text-decoration-none text-light">
+                            EA FC24</a></b>
+                    </h4>
+                    <h5 class="text-light">
+                        Playstation 5
+                    </h5>
+                </div>
+                <div class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                    <div class="input-group">
+                        <td>
+                            <div class="qty">
+                                <button class="btn-minus-1"><i class="bx bx-minus"></i></button>
+                                <span>1</span>
+                                <button class="btn-plus-1"><i class="bx bx-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="remove"><i class="bx bx-x"></i></button>
+                        </td>
+                    </div>
+                    <div class="text-end mt-2">
+                        <span class="text-light"><td class="cart-preco" style="color: #ffffff;">Valor do Item: R$349,99</td></span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="list-group-item py-3" style="background-color: rgba(255, 255, 255, 0.1);">
+            <div class="row g-3">
+                <div class="col-4 col-md-3 col-lg-2">
+                    <a href="#">
+                        <img src="../assets/GTA.jpg" class="img-thumbnail">
+                    </a>
+                </div>
+                <div class="col-8 col-md-9 col-lg-7 col-xl-8 text-left align-self-center">
+                    <h4>
+                        <b><a href="#" class="text-decoration-none text-light">
+                            Grand Theft Auto V</a></b>
+                    </h4>
+                    <h5 class="text-light">
+                        PC
+                    </h5>
+                </div>
+                <div class="col-6 offset-6 col-sm-6 offset-sm-6 col-md-4 offset-md-8 col-lg-3 offset-lg-0 col-xl-2 align-self-center mt-3">
+                    <div class="input-group">
+                        <td>
+                            <div class="qty">
+                                <button class="btn-minus-1"><i class="bx bx-minus"></i></button>
+                                <span>1</span>
+                                <button class="btn-plus-1"><i class="bx bx-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>
+                            <button class="remove"><i class="bx bx-x"></i></button>
+                        </td>
+                    </div>
+                    <div class="text-end mt-2">
+                        <span class="text-light"><td class="cart-preco" style="color: #ffffff;">Valor do Item: R$120,00</td></span>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <aside>
+            <div class="resumo">
+                <header>Resumo da compra</header>
+                <div class="info">
+                    <div><span>Sub-total</span><span>R$ 1239,90</span></div>
+                    <div><span>Frete</span><span>Grátis</span></div>
+                    <div>
+                        <button>
+                            Adicionar cupom de desconto
+                            <i class="bx bx-right-arrow-alt"></i>
+                        </button>
+                    </div>
+                </div>
+                <footer>
+                    <span>Total</span>
+                    <span>R$ 1239,90</span>
+                </footer>
+            </div>
+        
+            <!-- Botão de finalizar compra -->
+            <div class="finalizar">
+                <button class="order"><span class="default" style="font-size: 20px; margin-top: -3%;">Finalizar pedido</span><span class="success">Pedido realizado
+                    <svg viewbox="0 0 12 10">
+                    <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                    </svg></span>
+                <div class="box"></div>
+                <div class="truck">
+                    <div class="back"></div>
+                    <div class="front">
+                    <div class="window"></div>
+                    </div>
+                    <div class="light top"></div>
+                    <div class="light bottom"></div>
+                </div>
+                <div class="lines"></div>
+                <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+            </div>
+        </aside>
+    </ul>
     </main>
     <script src="carrinho.js"></script>
 </body>
 
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

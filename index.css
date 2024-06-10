@@ -152,7 +152,7 @@ h1 {
     .imagem_retro{
         height: 200px;
         border-radius: 10%;
-        margin-left: -29px;
+        margin-left: 1px;
         
     }
 
@@ -172,7 +172,7 @@ h1 {
     }
 
     .zoom img {
-        width: 115%;
+        width: 100%;
         padding: 6%;
     }
 
@@ -272,5 +272,4 @@ ul{
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
-}
 }
