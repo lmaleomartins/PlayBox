@@ -213,6 +213,7 @@ aside .resumo {
   border-radius: 16px;
   background-color: #1C212E;
   color: #ccc;
+  margin-left: 30px;
 }
 
 aside .resumo header {
@@ -752,6 +753,7 @@ html {
 
 .finalizar button {
   border: 3px solid #ccc;
+  margin-left: 30px;
 }
 
 .product, .cart-preco, .qty, .resumo, .finalizar, .page-title, .content{
@@ -848,4 +850,8 @@ html {
   .order .truck .wheel {
     --d: 20px;
   }
+}
+
+.resumo1 {
+  margin-right: 30px;
 }
